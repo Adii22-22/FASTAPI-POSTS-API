@@ -43,24 +43,21 @@ ASGI Server: Uvicorn
 ## Project Structure
 
 fastapi/
-├── app/
-│ ├── main.py # Application entry point
-│ ├── database.py # Database connection & session handling
-│ ├── models.py # SQLAlchemy ORM models
-│ ├── schemas.py # Pydantic schemas
-│ ├── config.py # Environment-based configuration
-│ ├── oauth2.py # JWT token creation & verification
-│ ├── utils.py # Password hashing utilities
-│ └── routers/
-│ ├── post.py # Post CRUD routes
-│ ├── user.py # User routes
-│ ├── auth.py # Authentication routes
-│ └── vote.py # Voting routes
+├─ app/
+│  ├─ main.py
+│  ├─ database.py
+│  ├─ models.py
+│  ├─ schemas.py
+│  ├─ config.py
+│  ├─ oauth2.py
+│  ├─ utils.py
+│  └─ routers/ (post, user, auth, vote)
 │
-├── alembic/ # Database migration scripts
-├── alembic.ini
-├── requirements.txt
-└── README.md
+├─ alembic/
+├─ alembic.ini
+├─ requirements.txt
+└─ README.md
+
 
 ---
 
